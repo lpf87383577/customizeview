@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">customview</string>
+
+    <string name="title_flipboard">Flipboard翻页</string>
+    <string name="title_like">即刻点赞</string>
+    <string name="title_ruler">薄荷健康尺</string>
+    <string name="animate">animate</string>
+    <string name="title_move">小米运动</string>
+</resources>
+
+
