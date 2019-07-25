@@ -22,4 +22,12 @@
         android:layout_marginTop="20dp"
         android:id="@+id/bt2"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="like2View"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt3"/>
+
 </android.support.constraint.ConstraintLayout>

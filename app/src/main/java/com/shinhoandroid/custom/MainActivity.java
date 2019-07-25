@@ -8,6 +8,7 @@ import android.view.View;
 import com.shinhoandroid.custom.filpboard.FilpboardActivity;
 import com.shinhoandroid.custom.like.LikeActivity;
 import com.shinhoandroid.custom.like.LikeView;
+import com.shinhoandroid.custom.like2.Like2Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
-
+        findViewById(R.id.bt3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Like2Activity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
     }
 }
