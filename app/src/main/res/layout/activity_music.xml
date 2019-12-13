@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.shinhoandroid.custom.music.MusicActivity"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:umanoDragView="@+id/root"
+        app:umanoOverlay="false"
+        app:umanoPanelHeight="55dp"
+        app:umanoShadowHeight="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="主页面"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+
+    <android.support.constraint.motion.MotionLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/motion"
+        >
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomorrow"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@+id/v1"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="BenSound"
+            android:textColor="#008811"
+            app:layout_constraintLeft_toRightOf="@+id/v1"
+            app:layout_constraintTop_toBottomOf="@+id/v2"
+            />
+
+        <com.shinhoandroid.custom.music.PlayPauseView
+            android:id="@+id/v4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:circleAlpha="0"
+            app:isCircleDraw="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+    </android.support.constraint.motion.MotionLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
